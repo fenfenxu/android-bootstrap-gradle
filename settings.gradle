@@ -1,0 +1,6 @@
+//include ':integration-tests'
+include 'app'
+include 'wishlist:lib'
+include 'ActionBarSherlock:actionbarsherlock'
+include 'Android-ViewPagerIndicator:library'
+include 'android-menudrawer:menudrawer'

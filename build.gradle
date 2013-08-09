@@ -1,0 +1,20 @@
+// sub project will extend this config
+buildscript {
+    repositories {
+        mavenCentral()
+    }   
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.4.2'
+    }   
+}
+
+allprojects {
+    version = '1.0'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }   
+}
+
+apply plugin: 'idea'

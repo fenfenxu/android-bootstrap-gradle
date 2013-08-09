@@ -1,0 +1,42 @@
+
+apply plugin: 'android'
+
+dependencies {
+    compile "com.google.code.gson:gson:2.2.4"
+    compile "com.squareup.dagger:dagger-compiler:1.0.1"
+    compile "com.squareup.dagger:dagger:1.0.1"
+    compile "com.jakewharton:butterknife:1.3.2"
+   // compile "com.actionbarsherlock:actionbarsherlock:4.3.1"
+
+ //   compile "com.viewpagerindicator:library:2.4.1"    
+    compile "com.github.kevinsawicki:http-request:5.4"
+    compile "com.github.kevinsawicki:android-pusher:0.6"
+//    compile "com.github.kevinsawicki:wishlist:0.9"
+    compile "com.squareup:otto:1.3.4"
+    compile project (":ActionBarSherlock:actionbarsherlock")
+    compile project (":wishlist:lib")
+    compile project (":Android-ViewPagerIndicator:library")
+    compile project (':android-menudrawer:menudrawer')
+//    compile "net.simonvt.menudrawer:menudrawer:3.0.2"
+}
+
+android {
+/*
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/resource']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+    }
+  */
+    buildToolsVersion "17.0"
+    compileSdkVersion 17
+
+    
+}
+
+
